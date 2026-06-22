@@ -1,0 +1,26 @@
+# robots.txt for HopTripGo
+# https://hoptripgo.com
+
+User-agent: *
+Allow: /
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Block sensitive files/folders if they exist
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Prevent indexing of internal search pages (if added later)
+Disallow: /search?
+
+# Sitemap location
+Sitemap: https://hoptripgo.com/sitemap.xml
+
+# Host preference
+Host: hoptripgo.com
